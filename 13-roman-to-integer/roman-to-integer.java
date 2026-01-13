@@ -29,17 +29,3 @@ public class Solution{
         System.out.println(romanToInt(roman));
     }
 }
-//class Solution {
-  //  public int romanToInt(String s) {
-       // Scanner sc = new Scanner(system.in)
-
-        //int s= sc.nextInt();
-        //System.out.println("Enter the inter to be converted to the roman letter")
-        //now I should put one list to given numbers and the letters
-
-      //  symbol = ["I, V, X, L, C, D, M"];
-      //  value = ["1, 5, 10, 50, 100, 500, 1000"];
-
-
-  //  }
-//}
