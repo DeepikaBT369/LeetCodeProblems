@@ -1,12 +1,10 @@
-from typing import List
-
 class Solution:
     def maxSubArray(self, nums: List[int]) -> int:
-        max_sum = nums[0]
-        current_sum = nums[0]
+        current = nums[0]
+        maximum = nums[0]
 
-        for i in range (1, len(nums)):
-            current_sum = max(nums[i], current_sum + nums[i])
-            max_sum = max(max_sum, current_sum)
+        for i in range(1, len(nums)):
+            current = max(nums[i], current+nums[i])
+            maximum = max(maximum, current)
 
-        return max_sum
+        return maximum
