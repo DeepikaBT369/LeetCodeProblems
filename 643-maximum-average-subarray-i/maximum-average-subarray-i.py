@@ -9,6 +9,9 @@ class Solution:
         for right in range(k, len(nums)):
             window_sum += nums[right]
             window_sum -= nums[right-k]
-            best_sum = max(window_sum, best_sum)
+            # best_sum = max(window_sum, best_sum)
+            if best_sum< window_sum:
+                best_sum = window_sum
+
 
         return best_sum/k
